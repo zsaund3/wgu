@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Font-family declaration */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #990000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Relative positioning requirement */
+}
+
+/* Navigation Menu */
+nav {
+    background: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Hover pseudo-class requirement */
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Section */
+section {
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Text Content */
+p, ul, ol, table {
+    margin-left: 20px;
+}
+
+/* Image */
+section img {
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Float Property - Positioning the Aside Element */
+aside {
+    background: #f4f4f4;
+    padding: 15px;
+    border-left: 5px solid #990000;
+    margin-top: 20px;
+    float: right; /* Float requirement */
+    width: 30%;
+}
+
+/* Ensuring Main Content Doesn't Wrap Around Aside */
+.content-wrapper section {
+    width: 65%;
+    float: left;
+}
+
+/* Tables */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #990000;
+    color: white;
+}
+
+/* Absolute Positioning Requirement */
+#special-highlight {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: yellow;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background: #990000;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #800000;
+}
+
+/* Class Selector Used More Than Once */
+.box-style {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* ID Selector - Formatting a Specific Element */
+#homepage-intro {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
